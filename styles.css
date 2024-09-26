@@ -1,0 +1,201 @@
+@font-face { 
+    font-family: 'Playfair';
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+}
+
+html {
+    color: rgb(38, 38, 38);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    border-bottom: 1px solid rgb(38, 38, 38) ;
+
+}
+
+nav ul {
+    display: flex; 
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: rgb(129, 84, 2);
+    font-style:italic;
+}
+
+header {
+    margin: 48px;
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.window {
+    margin-bottom: 0px;
+}
+
+
+h1 {
+    text-transform:uppercase;
+    font-family: Playfair;
+    text-align: center;
+    max-width: 40ch;
+}
+
+p {margin-top: 0px;}
+
+.two-col-layout {
+    column-count: 2;
+    max-width: 120ch;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    line-height: 2em;
+}
+
+figure {
+   width: 50%;
+   aspect-ratio: 1/1;
+   overflow: hidden;
+   border-radius: 50% 50% 50% 50%;
+   margin: 0px;
+}
+
+figure.home {
+    height: 90vh;
+    width: 100%;
+   overflow: hidden;
+   border-radius: 50% 50% 0% 0%;
+   margin: 0px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-position: center 100%;
+    object-fit: cover;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:24px;
+    width: 120ch;
+}
+
+.field-1col-1 {
+    grid-column: 1/2;
+    display: flex;
+}
+
+.field-1col-2 {
+    grid-column: 2/3;
+    display: flex;
+}
+
+.field-2col {
+    grid-column: 1/3;
+    display: flex;
+}
+
+
+input {
+    border-radius: 12px;
+    border: 1px solid rgb(226, 222, 220);
+    width: 100%;
+}
+
+textarea {
+    border-radius: 12px;
+    border: 1px solid rgb(226, 222, 220);
+    width: 100%;
+}
+
+label {
+    margin: 12px;
+    min-width: 80px;
+}
+
+button {
+    border-radius: 50px;
+    border: 1px solid rgb(38, 38, 38);
+    color: 1px solid rgb(38, 38, 38);
+    padding: 8px;
+    font-size: 16px;
+    grid-column: 1/3;
+}
+
+
+@media only screen and (max-width: 500px) {
+
+header {
+    justify-content: left;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.title {
+    justify-content: center;
+}
+
+h1 {
+    text-align: left;
+}
+
+section {
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+.two-col-layout {
+    column-count: 1;
+    max-width: 120ch;
+}
+
+ul li {
+    text-align: left;
+}
+
+form {
+    grid-template-columns: 1fr;
+}
+
+.field-1col-2 {
+    grid-column: 1/2;
+    display: flex;
+}
+
+.field-2col {
+    grid-column: 1/2;
+    display: flex;
+}
+
+figure {
+    width: 100%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 10%;
+    margin: 0px;
+ }
+
+}
